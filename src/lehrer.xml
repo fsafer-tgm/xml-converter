@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tgm>
+    <lehrer id="lise0">
+        <vorname>Erhard</vorname>
+        <nachname>List</nachname>
+        <sprechstunde jahr="2019/20">
+            <tag>Mittwoch</tag>
+            <stunde>5</stunde>
+            <raum>H128</raum>
+        </sprechstunde>
+        <abteilung name="HIT">
+            <gegenstand>SEW</gegenstand>
+            <gegenstand>INFI</gegenstand>
+            <gegenstand>SYT</gegenstand>
+            <gegenstand>SOPK</gegenstand>
+        </abteilung>
+        <abteilung name="HMB">
+            <gegenstand>AFSM</gegenstand>
+            <gegenstand>AUT</gegenstand>
+            <gegenstand>LA1</gegenstand>
+        </abteilung>
+    </lehrer>
+    <lehrer id="marm">
+        <vorname>Michael</vorname>
+        <nachname>Martinides</nachname>
+        <sprechstunde jahr="2019/20">
+            <tag>Montag</tag>
+            <stunde>1</stunde>
+            <raum>H934</raum>
+        </sprechstunde>
+        <abteilung name="HIT">
+            <gegenstand>SEW</gegenstand>
+            <gegenstand>INSY</gegenstand>
+            <gegenstand>SOPK</gegenstand>
+        </abteilung>
+    </lehrer>
+    <lehrer id="kopg">
+        <vorname>Gottfried</vorname>
+        <nachname>Koppensteiner</nachname>
+        <abteilung name="HIT">
+            <vorstand />
+            <gegenstand>SOPK</gegenstand>
+            <gegenstand>ITP2</gegenstand>
+            <gegenstand typ="Freigegenstand">SE3</gegenstand>
+        </abteilung>
+    </lehrer>
+</tgm>
