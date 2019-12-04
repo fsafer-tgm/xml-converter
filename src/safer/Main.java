@@ -1,4 +1,4 @@
-
+package safer;
 // TODO move me to the proper package named after your lastname. If you don't, the following code will throw an exception.
 // PACKAGE COMES HERE
 
@@ -10,7 +10,7 @@ import java.lang.reflect.*;
 
 /**
  * 
- * Main class to start program
+ * Safer.Main class to start program
  * 
  * @author Erhard List
  * @version infi-1920-01
@@ -32,8 +32,8 @@ public class Main {
 		// there have to be two commandline arguments
 		if (args.length != 2) {
 			// give some calling advice
-			System.err.println("Syntax:      java "+p+".Main XML-File TeacherID");
-			System.err.println("for example: java "+p+".Main C:\\teachers.xml LISE0");
+			System.err.println("Syntax:      java "+p+".Safer.Main XML-File TeacherID");
+			System.err.println("for example: java "+p+".Safer.Main C:\\teachers.xml LISE0");
 			System.exit(1);
 		} else {
 			// teacherids must be 4 or 5 characters long
@@ -68,7 +68,7 @@ public class Main {
 			System.err.println("Die geforderte Klasse "+callee+" enthält keine Methode parseXML(String, String).");
 		} catch (NullPointerException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
 			System.err.println("Die geforderte Methode parseXML(String) lässt sich nicht aufrufen. Ist sie static?");
-		} 
+		}
 		
 	}
 
