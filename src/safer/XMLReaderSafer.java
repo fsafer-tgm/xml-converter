@@ -22,7 +22,8 @@ public class XMLReaderSafer {
      */
     public static String parseXML(String file, String teacherid) {
         Document docXML = getDocument(file);
-        XPath p = (XPath) XPathFactory.newInstance();
+        XPathFactory xpf = XPathFactory.newInstance();
+        XPath p = xpf.newXPath();
         Element teacher = null;
         NodeList n = null;
         try{
@@ -37,7 +38,7 @@ public class XMLReaderSafer {
             b.append(tmp.getTextContent());
             b.append(", ");
         }
-        return teacher.getElementsByTagName("vorname").item(0).getTextContent() + teacher.getElementsByTagName("nachname").item(0).getTextContent() + b.toString();
+        return teacher.getElementsByTagName("vorname").item(0).getTextContent() +" "+ teacher.getElementsByTagName("nachname").item(0).getTextContent() +": "+ b.toString();
     }
 
     /**

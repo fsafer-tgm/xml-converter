@@ -58,7 +58,9 @@ public class Main {
 		try {
 			// call the needed method - the hard way ;-)
 			Class<?> cls = Class.forName(callee);
+
 			Method m = cls.getDeclaredMethod("parseXML", String.class, String.class);
+			System.out.print(m);
 			String s = (String) m.invoke(null,filepath,teacherid);
 			System.out.println(s);
 			// lots of things can go wrong here, so be catchy
@@ -67,7 +69,7 @@ public class Main {
 		} catch (NoSuchMethodException | SecurityException e) {
 			System.err.println("Die geforderte Klasse "+callee+" enthält keine Methode parseXML(String, String).");
 		} catch (NullPointerException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
-			System.err.println("Die geforderte Methode parseXML(String) lässt sich nicht aufrufen. Ist sie static?");
+			System.err.println(e.getMessage());
 		}
 		
 	}
