@@ -1,10 +1,3 @@
-# Struktur einer Java-Anwendung 
-Diese Struktur dient zur Erstellung einer Java-Applikation.
-Alle Abgaben entlang des Softwareentwicklungsprozesses können hier eingepflegt werden:
+# XML auslesen
 
-- bin: enthält alle Files, zur Ausführung,...
-- design: enthält alle Dokumente des Softwaredesigns
-- doc: enthält die Dokumentation (JavaDoc)
-- resource: enthält Media-Files
-- src: enthält den Sourcecode (Packages, Files)
-- test: enthält die Testfälle, welche den Sourcecode testen
+Dieses Programm ließt aus einem vorgegebem File die Daten zur passenden ID aus und gibt diese in der Konsole aus. Zum jetzigen Stand werden diese Informationen (File-Pfad und ID) in der Main-Methode direkt übergeben.
